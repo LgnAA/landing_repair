@@ -49,6 +49,12 @@ body {
 section {
     padding: 10rem 0;
 }
+.section-header {
+    margin-bottom: 10rem;
+    .bold();
+    font-size: 3.6rem;
+    text-align: center;
+}
 // main
 .main {
     background: #fff url(../img/mainbga.jpg) center center no-repeat;
@@ -198,6 +204,56 @@ button, input {
             &:visited {
                 opacity: 0;;
             }
+}
+// оформление секции с приемуществами
+.features {
+    &-block {
+        text-align: center;
+        h3 {
+            font-size: 2rem;
+            .bold();
+            margin-bottom: 3rem;
+        }
+        p {
+            display: inline-block;
+            width: 80%;
+            font-size: 1.4rem;
+        }
+    }
+    &-img {
+        height: 8rem;
+        margin-bottom: 3rem;
+        img {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &-slider {
+        position: relative;
+    }
+}
+//  убрать обводку которой нет.slick-active {
+//     outline: none;
+// }
+.arrow {
+    top: 50%;
+    transform:translateY(-50%);
+    z-index: 99;
+    width: 2rem;
+    height: 2rem;
+    border:none;
+    position: absolute;
+}
+.prev {
+    background:url(..img/arrowleft.svg) center no-repeat;
+    left: 0;
+    background-size:70%;
+}
+.next {
+    background:url(..img/arrowleft.svg) center no-repeat;
+    right: 0;
+    background-size:70%;
 }
 @media (max-width:991px) {
     .main {

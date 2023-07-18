@@ -66,8 +66,106 @@
             </div>
           </div>
         </div>
-    </div>  
+    </div>
   </main>
+  <section class="features">
+    <div class="container">
+      <h2 class="section-header">
+        Преимущества работы с нами
+      </h2>
+      <div class="features-slider">
+        <!-- .features-block*4>.features-img>ri:t+h3+p -->
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <source srcset="img/coin.svg" type="image/">
+              <img src="img/coin.svg" alt="платите по факту">
+            </picture>
+          </div>
+            <h3>Платите по факту</h3>
+            <p>Вы оплачивайте выполнение работы, только после их выполнения.<br>Никаких скрытых доплат и промежуточных платежей</p>
+        </div>
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <source srcset="img/doc.svg" type="image/">
+              <img src="img/doc.svg" alt="">
+            </picture>
+          </div>
+          <h3>Заключаем договор</h3>
+          <p>Перед началом работ заключаем договор на юридическое лицо.<br>Вы можете быть уверены, что все обязательства будут выполнены.
+            </p>
+      </div>
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <source srcset="img/clock.svg" type="image/">
+              <img src="img/clock.svg" alt="платите по факту">
+            </picture>
+          </div>
+          <h3>Точно в срок</h3>
+          <p>Работаем строго по установленным срокам, которые прописаны<br>в договоре. Если не успеваем, вы платите меньше</p>
+      </div>
+        <div class="features-block">
+          <div class="features-img">
+            <picture>
+              <source srcset="img/piggy.svg" type="image/">
+              <img src="img/piggy.svg" alt="платите по факту">
+            </picture>
+          </div>
+          <h3>Экономите материалы</h3>
+          <p>Мы являемся структурным подразделением компании поставщика<br>строительных смесей gicema.ru и даём вам самые 
+            выгодные цены.
+            </p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Подкючаем стили slickslider -->
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <!-- Подключаем библиотеку slickslider -->
+  <script src="slick/slick.min.js"></script>
+  <!-- Инициализируем слайдер -->
+  <script>
+  $(document).ready(function(){
+    $('.features-slider').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        prevArrow: "<img src='https://svgshare.com/i/6Ei.svg' class='prev arrow' alt='1'>",
+        nextArrow: "<img src='https://svgshare.com/i/6Gf.svg' class='next arrow' alt='2'>",
+        slidesToScroll: 2,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        prevArrow: "<img src='https://svgshare.com/i/6Ei.svg' class='prev arrow' alt='1'>",
+        nextArrow: "<img src='https://svgshare.com/i/6Gf.svg' class='next arrow' alt='2'>",
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }
+  ]
+    });
+  });
+  </script>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

@@ -23,6 +23,12 @@ body {
 section {
   padding: 10rem 0;
 }
+.section-header {
+  margin-bottom: 10rem;
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
 .main {
   background: #ffffff url(../img/mainbga.jpg) center center no-repeat;
   background-size: cover;
@@ -90,7 +96,8 @@ section {
   padding: 0.5rem;
   font-size: 1.3rem;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 .main-form-btn {
   display: inline-block;
@@ -133,6 +140,7 @@ input:focus {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .button:hover {
@@ -157,6 +165,51 @@ input:focus {
 }
 .phone:visited {
   opacity: 0;
+}
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-size: 2rem;
+  font-family: "ProximaNova_bold", sans-serif;
+  margin-bottom: 3rem;
+}
+.features-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.4rem;
+}
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.features-slider {
+  position: relative;
+}
+.arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  position: absolute;
+}
+.prev {
+  background: url(..img/arrowleft.svg) center no-repeat;
+  left: 0;
+  background-size: 70%;
+}
+.next {
+  background: url(..img/arrowleft.svg) center no-repeat;
+  right: 0;
+  background-size: 70%;
 }
 @media (max-width: 991px) {
   .main {
