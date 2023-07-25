@@ -50,21 +50,29 @@ section {
     padding: 10rem 0;
 }
 .section-header {
-    margin-bottom: 10rem;
-    .bold();
-    font-size: 3.6rem;
+    &-light {
+        color:@light;
+    }
+    h2 {
+        .bold();
+        font-size: 3.6rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    margin-bottom: 5rem;
     text-align: center;
 }
 // main
 .main {
-    background: #fff url(../img/mainbga.jpg) center center no-repeat;
+    background: #fff url(../img/mainbga.jpg) center no-repeat;
     background-size: cover;
     padding: 3rem 0 10rem;
     &-content {
         margin-top: 10rem;
         // главный зоголовок
         h1 {
-            .bold;
+            .bold();
 
             line-height: 1.45;
             font-size: 4rem;
@@ -256,37 +264,63 @@ button, input, textarea {
     right: 0;
     background-size:70%;
 }
-@media (max-width:991px) {
-    .main {
-        background-position: top right;
+// секция с ценами
+.price {
+    background: @icons-color url(../img/pricebg.jpg) repeat center;
+    img {
+        padding: 3rem 1rem;
     }
-    .main-content {
+    &-btn {
+        text-align: right;
+        margin-right: 1.2rem;
+    }
+    &-block {
         text-align: center;
-        margin-top: 3rem;
+        h4 {
+            font-size: 1.9rem;
+            padding-top: 3rem;
+            .bold();
+        }
+        min-height: 40rem;
+        background-color: @light;
+        display: block;
+        text-align: center;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    .main-trigger {
-        margin-top: 0rem;
+    &-list {
+        padding: 0rem;
+        list-style: none;
+        min-height: 13rem;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        li {
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 1.7rem;
+                height: 1.7rem;
+                background: url(../img/check.svg) no-repeat center;
+                background-size: 100%;
+                vertical-align: middle;
+                margin-right: 1rem;
+            }
+        }
     }
+    &-button {
+        margin-bottom: 3.5rem;
+    }
+    &-tag {
+        display: block;
+        margin-bottom:2rem;
+        font-size: 1.9rem;
+        .bold();
+    }
+
 }
-@media (max-width:767px) {
-    .main {
-        background-position: bottom right;
-    }
-    .main-content {
-        display: inline-block;
-        text-align: center;
-        margin-top: 30rem;
-    }
-    .header {
-        text-align: center;
-    }
-    .wrap-block {
-        text-align: center;
-    }
-    .phone-block {
-        text-align: center;
-    }
-}
+
 // Всплывающие окна
 .popup {
     display: none;
@@ -323,3 +357,44 @@ button, input, textarea {
         
     }
 }
+
+@media (max-width:991px) {
+    .main {
+        background-position: top right;
+    }
+    .main-content {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .main-trigger {
+        margin-top: 0rem;
+    }
+    .price{
+        &-btn {
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+        
+    }
+    
+}
+@media (max-width:767px) {
+    .main {
+        background-position: bottom right;
+    }
+    .main-content {
+        display: inline-block;
+        text-align: center;
+        margin-top: 30rem;
+    }
+    .header {
+        text-align: center;
+    }
+    .wrap-block {
+        text-align: center;
+    }
+    .phone-block {
+        text-align: center;
+    }
+}
+
