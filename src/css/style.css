@@ -20,6 +20,31 @@ html {
 body {
   font-family: "ProximaNova_reg", sans-serif;
 }
+.form-input {
+  display: block;
+  width: 100%;
+  border: 0.1rem solid #dddddd;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+.form label {
+  position: absolute;
+  display: inline-block;
+  background: #ffffff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.form-btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  height: 5.5rem;
+  width: 100%;
+  text-transform: uppercase;
+}
 section {
   padding: 10rem 0;
 }
@@ -88,31 +113,6 @@ section {
 .main-form-header strong {
   font-size: 1.9rem;
   margin-bottom: 4rem;
-}
-.main-form-input {
-  display: block;
-  width: 100%;
-  border: 0.1rem solid #dddddd;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  font-size: 2rem;
-  border-radius: 10px;
-}
-.main-form label {
-  position: absolute;
-  display: inline-block;
-  background: #ffffff;
-  padding: 0.5rem;
-  font-size: 1.3rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-.main-form-btn {
-  display: inline-block;
-  font-size: 1.5rem;
-  height: 5.5rem;
-  width: 100%;
-  text-transform: uppercase;
 }
 .main-form small {
   display: block;
@@ -274,6 +274,7 @@ textarea:focus {
   height: 100%;
 }
 .feedback {
+  position: relative;
   background: url(../img/feedback-bg.jpg) no-repeat center;
   background-size: cover;
 }
@@ -328,6 +329,29 @@ textarea:focus {
   border: none;
   background-color: #70c849;
 }
+.feedback-form {
+  margin-top: 6rem;
+  padding: 4rem 10rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.feedback-form h3 {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.feedback-form label {
+  left: auto;
+  transform: translate(-50%, 5px);
+}
+.feedback-btn {
+  max-width: 30rem;
+  margin: auto;
+}
+.hand {
+  position: absolute;
+  bottom: 0;
+}
 .popup {
   display: none;
   position: fixed;
@@ -362,6 +386,11 @@ textarea:focus {
   font-size: 2rem;
   font-weight: 545;
 }
+@media (max-width: 1440px) {
+  .hand {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -376,6 +405,20 @@ textarea:focus {
   .price-btn {
     margin-bottom: 5rem;
     text-align: center;
+  }
+  .hand {
+    display: none;
+  }
+  .feedback .fotorama {
+    margin-bottom: 5rem;
+  }
+  .feedback-prev-btn {
+    left: -1rem;
+    top: 40rem;
+  }
+  .feedback-next-btn {
+    right: -1rem;
+    top: 40rem;
   }
 }
 @media (max-width: 767px) {

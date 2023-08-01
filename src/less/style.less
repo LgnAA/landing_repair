@@ -44,6 +44,37 @@ html {
 body {
     .reg;
 }
+// оформление форм
+ .form {
+    // поля ввода
+    &-input {
+        display: block;
+        width:100%;
+        border: 0.1rem solid @border-input;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        font-size: 2rem;
+        border-radius: 10px;
+    }
+    // подписки к полям
+    label {
+        position: absolute;
+        display: inline-block;
+        background: @light;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%)
+    }
+    // кнопка
+    &-btn {
+        display: inline-block;
+        font-size: 1.5rem;
+        height: 5.5rem;
+        width: 100%;
+        text-transform: uppercase;
+    }
+ }
 // Typography
 section {
     padding: 10rem 0;
@@ -119,34 +150,6 @@ section {
                     font-size: 1.9rem;
                     margin-bottom: 4rem;
                 }
-            }
-            // поля ввода
-            &-input {
-                display: block;
-                width:100%;
-                border: 0.1rem solid @border-input;
-                padding: 1.5rem;
-                margin: 2rem 0;
-                font-size: 2rem;
-                border-radius: 10px;
-            }
-            // подписки к полям
-            label {
-                position: absolute;
-                display: inline-block;
-                background: @light;
-                padding: 0.5rem;
-                font-size: 1.3rem;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%)
-            }
-            // кнопка
-            &-btn {
-                display: inline-block;
-                font-size: 1.5rem;
-                height: 5.5rem;
-                width: 100%;
-                text-transform: uppercase;
             }
             // подпись
             small {
@@ -325,6 +328,7 @@ button, input, textarea {
     height: 100%;
 }
 .feedback {
+    position: relative;
     background: url(../img/feedback-bg.jpg) no-repeat center;
     background-size:cover;
     .media {
@@ -378,6 +382,31 @@ button, input, textarea {
             background-color: @icons-color;
         }
     }
+    // оформление главной формы
+    &-form {
+        margin-top: 6rem;
+        padding: 4rem 10rem;
+        background-color: @light;
+        text-align: center;
+        h3 {
+            .bold();
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        label {
+            left: auto;
+            transform: translate(-50%, 5px);
+
+        }
+    }
+    &-btn {
+        max-width: 30rem;
+        margin: auto;
+    }
+}
+.hand {
+    position: absolute;
+    bottom:0;
 }
 // Всплывающие окна
 .popup {
@@ -415,6 +444,11 @@ button, input, textarea {
         
     }
 }
+@media (max-width:1440px) {
+    .hand {
+        display: none;
+    }
+}
 
 @media (max-width:991px) {
     .main {
@@ -432,9 +466,23 @@ button, input, textarea {
             margin-bottom: 5rem;
             text-align: center;
         }
-        
     }
-    
+    .hand {
+        display: none;
+    }
+    .feedback {
+        .fotorama {
+            margin-bottom: 5rem;
+        }
+        &-prev-btn {
+            left:-1rem;
+            top: 40rem;
+        }
+        &-next-btn {
+            right:-1rem;
+            top: 40rem;
+        }
+    }
 }
 @media (max-width:767px) {
     .main {
