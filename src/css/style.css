@@ -386,12 +386,77 @@ textarea:focus {
   font-size: 2rem;
   font-weight: 545;
 }
+.scheme {
+  background: #ffffff url(../img/hand2.png) bottom -10rem right -10rem no-repeat;
+  background-size: 65rem;
+}
+.scheme-block {
+  margin-bottom: 5rem;
+}
+.scheme-block h3 {
+  font-size: 2rem;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.scheme-block p {
+  font-size: 1.3rem;
+}
+.all-inclusive {
+  background: #f5f5f5;
+}
+.all-inclusive .section-header_active {
+  padding-bottom: 3rem;
+}
+.all-inclusive .section-header_active h2 {
+  color: #70c849;
+  font-weight: 700;
+}
+.all-inclusive .media {
+  min-height: 15rem;
+  font-size: 1.3rem;
+}
+.all-inclusive .media h4 {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.circle {
+  display: inline-block;
+  background-color: #70c849;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.3rem;
+  border: 2px solid #70c849;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  color: #ffffff;
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
 @media (max-width: 1440px) {
   .hand {
     display: none;
   }
 }
+@media (max-width: 1350px) {
+  .scheme {
+    background: none;
+  }
+  .hand {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
+  .all-inclusive {
+    text-align: center;
+  }
   .main {
     background-position: top right;
   }
@@ -422,6 +487,12 @@ textarea:focus {
   }
 }
 @media (max-width: 767px) {
+  .scheme {
+    text-align: center;
+  }
+  .scheme-main {
+    text-align: center;
+  }
   .main {
     background-position: bottom right;
   }
