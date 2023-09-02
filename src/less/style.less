@@ -556,6 +556,38 @@ button, input, textarea {
         }
     }
 }
+// материалы
+.materials {
+    background: @light url(../img/materials/material-bg.png) 0 0 no-repeat;
+    h2 {
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+    &-offer {
+        margin-top: 5rem;
+    }
+    &-knauf {
+        margin-top: 1rem;
+        margin-bottom: 2.125rem;
+    }
+    &-img {
+        height: 8rem;
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+        img {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &-link {
+        color: @icons-color;
+        &:hover {
+            color: darken(@icons-color, 10%);
+        }
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width:1440px) {
     .hand {

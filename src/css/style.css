@@ -492,6 +492,37 @@ textarea:focus {
   background: url(../img/problems/goodchek.svg.png) center no-repeat;
   background-size: 80%;
 }
+.materials {
+  background: #ffffff url(../img/materials/material-bg.png) 0 0 no-repeat;
+}
+.materials h2 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.materials-offer {
+  margin-top: 5rem;
+}
+.materials-knauf {
+  margin-top: 1rem;
+  margin-bottom: 2.125rem;
+}
+.materials-img {
+  height: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+.materials-img img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.materials-link {
+  color: #70c849;
+  font-size: 1.5rem;
+}
+.materials-link:hover {
+  color: #58aa34;
+}
 @media (max-width: 1440px) {
   .hand {
     display: none;
