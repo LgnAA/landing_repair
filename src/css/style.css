@@ -523,6 +523,35 @@ textarea:focus {
 .materials-link:hover {
   color: #58aa34;
 }
+.tour {
+  background: #ffffff url(../img/tour-img.png) center left -10rem no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  font-size: 2rem;
+}
+.upsell {
+  background: #286b0a;
+  color: #ffffff;
+}
+.upsell h2 {
+  margin-bottom: 3rem;
+}
+.upsell-block {
+  text-align: center;
+  min-height: 30rem;
+}
+.upsell-block p {
+  font-size: 1.5rem;
+}
+.upsell-block img {
+  width: 100%;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+.upsell-btn {
+  padding: 1rem 3.3rem;
+}
 @media (max-width: 1440px) {
   .hand {
     display: none;

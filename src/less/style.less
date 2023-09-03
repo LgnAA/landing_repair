@@ -38,6 +38,7 @@
 @light: #fff;
 @border-input: #dddddd;
 @problems-color: hsla(0, 10%, 61%, 0.5);;
+@upsell-bg: #286b0a;
 // basic setting
 html {
     font-size:10px;
@@ -586,6 +587,37 @@ button, input, textarea {
             color: darken(@icons-color, 10%);
         }
         font-size: 1.5rem;
+    }
+}
+// посмотрите как мы работаем
+.tour {
+    background: @light url(../img/tour-img.png) center left -10rem no-repeat;
+    background-size: cover;
+    &-subtitle {
+        font-size: 2rem;
+    }
+}
+// доп.услуги
+.upsell {
+    background: @upsell-bg;
+    color: @light;
+    h2 {
+        margin-bottom: 3rem;
+    }
+    &-block {
+        text-align: center;
+        min-height: 30rem;
+        p {
+            font-size: 1.5rem;
+        }
+        img {
+            width:100%;
+            max-width: 30rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &-btn {
+        padding: 1rem 3.3rem;
     }
 }
 
