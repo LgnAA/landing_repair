@@ -20,7 +20,8 @@ html {
 body {
   font-family: "ProximaNova_reg", sans-serif;
 }
-.form-input {
+.form-input,
+.form-textarea {
   display: block;
   width: 100%;
   border: 0.1rem solid #dddddd;
@@ -552,6 +553,55 @@ textarea:focus {
 .upsell-btn {
   padding: 1rem 3.3rem;
 }
+.contacts {
+  background: #ffffff url(../img/contacts-bg.png) center left -30rem no-repeat;
+  background-size: cover;
+}
+.contacts p {
+  font-size: 1.5rem;
+}
+.contacts-form h2 {
+  font-size: 1.9rem;
+  font-family: "ProximaNova_reg", sans-serif;
+  margin-bottom: 5rem;
+}
+.contacts h2 {
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.contacts p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.contacts-link {
+  display: inline-block;
+  color: #1a1820;
+}
+.contacts-link:hover {
+  color: #000000;
+}
+.footer {
+  font-size: 1.5rem;
+  padding: 4rem 0;
+  background: #ffffff;
+}
+.footer-logotype {
+  width: 70%;
+  height: 70%;
+}
+.footer-contacts {
+  text-align: center;
+}
+.footer-contacts p {
+  margin: 0;
+}
+.footer-dev {
+  text-align: right;
+}
+.footer-devlogo {
+  margin-top: -2rem;
+  width: 20%;
+  height: 20%;
+}
 @media (max-width: 1440px) {
   .hand {
     display: none;
@@ -608,6 +658,24 @@ textarea:focus {
   }
   .problems-list_good {
     margin-top: 2rem;
+  }
+  .contacts {
+    padding: 0;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-contacts {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .footer-dev {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .footer-devlogo {
+    width: 30%;
+    height: 20%;
   }
 }
 @media (max-width: 767px) {

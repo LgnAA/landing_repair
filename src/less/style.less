@@ -49,7 +49,7 @@ body {
 // оформление форм
  .form {
     // поля ввода
-    &-input {
+    &-input, &-textarea {
         display: block;
         width:100%;
         border: 0.1rem solid @border-input;
@@ -621,6 +621,61 @@ button, input, textarea {
     }
 }
 
+// contacts
+.contacts {
+    background: @light url(../img/contacts-bg.png) center left -30rem no-repeat;
+    background-size: cover;
+    p {
+        font-size: 1.5rem;
+    }
+    
+    &-form {
+        h2 {
+            font-size: 1.9rem;
+            .reg();
+            margin-bottom: 5rem;
+        }
+    }
+
+    h2 {
+        .bold();
+    }
+    p{
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    &-link {
+        display: inline-block;
+        color: @text;
+        &:hover {
+            color: darken(@text,15%);
+        }
+    }
+}
+.footer {
+    font-size: 1.5rem;
+    padding: 4rem 0;
+    background: @light;
+    &-logotype {
+        width: 70%;
+        height: 70%;
+    }
+    &-contacts {
+        text-align: center;
+        p {
+            margin: 0;
+        };
+    }
+    &-dev {
+        text-align: right;
+    }
+    &-devlogo {
+        margin-top: -2rem;
+        width: 20%;
+        height: 20%;
+    }
+}
+
 @media (max-width:1440px) {
     .hand {
         display: none;
@@ -687,6 +742,26 @@ button, input, textarea {
         }
         &-list_good {
             margin-top:2rem;
+        }
+    }
+    .contacts {
+        padding: 0;
+    }
+    .footer {
+        &-logo {
+            text-align: center;
+        }
+        &-contacts {
+            text-align: center;
+            margin-top: 5rem;
+        }
+        &-dev {
+            text-align: center;
+            margin-top: 5rem;
+        }
+        &-devlogo {
+            width:30%;
+            height: 20%;
         }
     }
 }
